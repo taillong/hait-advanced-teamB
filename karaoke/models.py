@@ -15,9 +15,9 @@ class Song(models.Model):
         db_table = 'song'
         
     title = models.CharField(verbose_name = '曲', max_length=30)
-    high = models.IntegerField(verbose_name = '最高音')
-    low = models.IntegerField(verbose_name = '最低音')
-    artist = models.ForeignKey(Artist, verbose_name = 'アーティスト', on_delete=models.PROTECT)
+    high = models.IntegerField()
+    low = models.IntegerField()
+    artist = models.ForeignKey(Artist, verbose_name = 'アーティスト', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title

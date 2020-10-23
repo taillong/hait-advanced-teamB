@@ -1,10 +1,9 @@
-# ユーザーの最低音と最高音を取得する
+# 声質が似ているアーティストを取得
 import random
 
-def main():
-    lowest = random.randint(0, 8)
-    highest = random.randint(lowest, 9)
-    return lowest, highest
+def main(x):
+    artist_list = [1, 2, 3]
+    return artist_list
 
 if __name__ == '__main__':
     main()
